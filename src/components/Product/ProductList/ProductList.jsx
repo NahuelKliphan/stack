@@ -2,10 +2,12 @@ import React from 'react';
 import './ProductList.css';
 import ProductItem from '../ProductItem/ProductItem.jsx';
 import ProductNavbar from '../ProductNavbar/ProductNavbar.jsx';
+import { getProduct } from './ProductData.js';
 
 const ProductList = () => {
     return (
         <main>
+            <button onClick={getProduct}>Test Product</button>
             <div className="container">
                 <ProductNavbar />
                 <section className="text-center mb-4">
